@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Hedieh Nejatmand Malari| Cognitive Psychology Researcher</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Hedieh Nejatmand Malari | Cognitive Psychology Researcher
+  </title>
 
   <meta
     name="description"
-    content="Hedieh Nejatmand is a PhD student in Psychology at the University of New Hampshire studying working memory, category learning, attention, and metacognition."
+    content="Hedieh Nejatmand Malari is a PhD student in Psychology at the University of New Hampshire studying working memory, category learning, attention, metacognition, and human factors."
   >
 
-  <link rel="canonical" href="https://hedieh-nejatmand.github.io/">
+  <link
+    rel="canonical"
+    href="https://hedieh-nejatmand.github.io/"
+  >
 
-  <meta property="og:title" content="Hedieh Nejatmand">
-  <meta property="og:description" content="PhD student and cognitive psychology researcher at the University of New Hampshire.">
-  <meta property="og:image" content="https://hedieh-nejatmand.github.io/profile.jpg">
-  <meta property="og:url" content="https://hedieh-nejatmand.github.io/">
-  <meta property="og:type" content="profile">
+  <!-- Social media and search preview -->
+
+  <meta
+    property="og:title"
+    content="Hedieh Nejatmand Malari"
+  >
+
+  <meta
+    property="og:description"
+    content="PhD student and cognitive psychology researcher at the University of New Hampshire."
+  >
+
+  <meta
+    property="og:image"
+    content="https://hedieh-nejatmand.github.io/profile.jpg"
+  >
+
+  <meta
+    property="og:url"
+    content="https://hedieh-nejatmand.github.io/"
+  >
+
+  <meta
+    property="og:type"
+    content="profile"
+  >
+
+  <!-- Structured information for search engines -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Hedieh Nejatmand",
+    "name": "Hedieh Nejatmand Malari",
+    "alternateName": "Hedieh Nejatmand",
     "url": "https://hedieh-nejatmand.github.io/",
     "image": "https://hedieh-nejatmand.github.io/profile.jpg",
     "jobTitle": "PhD Student in Psychology",
+    "description": "Cognitive psychology researcher studying working memory, category learning, attention, metacognition, and human factors.",
     "affiliation": {
       "@type": "CollegeOrUniversity",
-      "name": "University of New Hampshire"
+      "name": "University of New Hampshire",
+      "url": "https://www.unh.edu/"
     },
     "sameAs": [
       "https://github.com/hedieh-nejatmand"
@@ -42,10 +78,12 @@
       --accent: #c225a9;
       --accent-dark: #941783;
       --text: #171717;
-      --muted: #666666;
+      --muted: #626262;
       --line: #e8e8e8;
       --background: #ffffff;
       --soft-background: #faf8fa;
+      --tag-background: #f5e9f3;
+      --tag-text: #6f145f;
       --max-width: 1040px;
     }
 
@@ -80,11 +118,12 @@
     }
 
     header {
-      border-bottom: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.96);
       position: sticky;
       top: 0;
       z-index: 10;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
     }
 
     nav {
@@ -126,12 +165,13 @@
       grid-template-columns: minmax(0, 1fr) 310px;
       gap: 58px;
       align-items: start;
+      padding-top: 10px;
     }
 
     h1 {
-      margin: 0 0 6px;
+      margin: 0 0 8px;
       font-size: clamp(2.3rem, 5vw, 3.6rem);
-      line-height: 1.1;
+      line-height: 1.08;
       letter-spacing: -0.04em;
     }
 
@@ -150,8 +190,8 @@
     }
 
     .intro {
+      margin: 0 0 18px;
       font-size: 1.06rem;
-      margin-bottom: 18px;
     }
 
     .research-line {
@@ -163,9 +203,10 @@
     .profile-photo {
       width: 100%;
       aspect-ratio: 4 / 5;
+      display: block;
       object-fit: cover;
       object-position: center;
-      border-radius: 6px;
+      border-radius: 7px;
       box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
     }
 
@@ -194,17 +235,18 @@
     }
 
     .button.primary {
-      color: white;
+      color: #ffffff;
       background: var(--accent);
     }
 
     .button.primary:hover {
-      color: white;
+      color: #ffffff;
       background: var(--accent-dark);
       border-color: var(--accent-dark);
     }
 
     section {
+      scroll-margin-top: 95px;
       padding-top: 74px;
     }
 
@@ -252,9 +294,9 @@
 
     .tag {
       padding: 6px 11px;
-      background: #f5e9f3;
+      color: var(--tag-text);
+      background: var(--tag-background);
       border-radius: 999px;
-      color: #6f145f;
       font-size: 0.88rem;
     }
 
@@ -281,8 +323,13 @@
         padding: 18px 0;
       }
 
+      .nav-links {
+        gap: 14px;
+      }
+
       .hero {
         grid-template-columns: 1fr;
+        gap: 38px;
       }
 
       .photo-column {
@@ -304,7 +351,13 @@
 
   <header>
     <nav class="container">
-      <a class="brand" href="#about">Hedieh Nejatmand</a>
+
+      <a
+        class="brand"
+        href="#about"
+      >
+        Hedieh Nejatmand Malari
+      </a>
 
       <div class="nav-links">
         <a href="#about">About</a>
@@ -313,22 +366,32 @@
         <a href="#teaching">Teaching</a>
         <a href="#news">News</a>
       </div>
+
     </nav>
   </header>
 
   <main class="container">
 
-    <section class="hero" id="about">
+    <section
+      class="hero"
+      id="about"
+    >
 
-      <div>
+      <div class="hero-text">
+
         <h1>
           <span class="first-name">Hedieh</span>
-          <span class="last-name">Nejatmand</span>
+          <span class="last-name">Nejatmand Malari</span>
         </h1>
 
         <p class="subtitle">
           PhD Student in Psychology ·
-          <a href="https://www.unh.edu/" target="_blank" rel="noopener">
+
+          <a
+            href="https://www.unh.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             University of New Hampshire
           </a>
         </p>
@@ -336,7 +399,8 @@
         <p class="intro">
           I am a PhD student in cognitive psychology at the University of New
           Hampshire. My research examines how working memory, attention, and
-          metacognitive processes influence learning and decision-making.
+          metacognitive processes influence learning, performance, and
+          decision-making.
         </p>
 
         <p class="intro">
@@ -347,7 +411,7 @@
 
         <p class="intro">
           I am also interested in applying cognitive science to human factors,
-          human–AI interaction, and the design of more intuitive and
+          human–AI interaction, and the development of more intuitive and
           human-centered technologies.
         </p>
 
@@ -358,6 +422,7 @@
         </p>
 
         <div class="buttons">
+
           <a
             class="button primary"
             href="mailto:hn1072@unh.edu"
@@ -369,39 +434,48 @@
             class="button"
             href="https://github.com/hedieh-nejatmand"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             GitHub
           </a>
+
         </div>
       </div>
 
       <aside class="photo-column">
+
         <img
           class="profile-photo"
           src="profile.jpg"
-          alt="Portrait of Hedieh Nejatmand"
+          alt="Portrait of Hedieh Nejatmand Malari"
         >
 
         <div class="contact-card">
+
           <p>📍 New Hampshire, USA</p>
+
           <p>
             ✉️
-            <a href="mailto:hn1072@unh.edu">hn1072@unh.edu</a>
+            <a href="mailto:hn1072@unh.edu">
+              hn1072@unh.edu
+            </a>
           </p>
+
           <p>🎓 PhD Student in Psychology</p>
+
         </div>
       </aside>
 
     </section>
 
     <section id="research">
+
       <h2>Research</h2>
 
       <p class="section-intro">
         My research investigates the cognitive processes that support learning
-        and performance, with particular emphasis on individual differences
-        in working memory and attention.
+        and performance, with particular emphasis on working memory, attention,
+        metacognition, and individual differences.
       </p>
 
       <div class="tags">
@@ -410,64 +484,84 @@
         <span class="tag">Attention</span>
         <span class="tag">Metacognition</span>
         <span class="tag">Human Factors</span>
+        <span class="tag">Human–AI Interaction</span>
         <span class="tag">Behavioral Experiments</span>
         <span class="tag">Data Analysis in R</span>
       </div>
+
     </section>
 
     <section id="projects">
+
       <h2>Selected Projects</h2>
 
       <div class="cards">
 
         <article class="card">
-          <h3>Working Memory and Category Learning</h3>
+
+          <h3>
+            Working Memory and Category Learning
+          </h3>
+
           <p>
-            Examining how verbal working-memory demands influence learning
-            across rule-based and information-integration category structures.
-            The project uses controlled behavioral experiments and
-            trial-level performance analyses.
+            Examining how working-memory demands influence learning across
+            rule-based and information-integration category structures. This
+            work uses controlled behavioral experiments and trial-level
+            analyses of accuracy and response time.
           </p>
+
         </article>
 
         <article class="card">
-          <h3>Metacognition and Memory</h3>
+
+          <h3>
+            Metacognition and Memory
+          </h3>
+
           <p>
             Investigating how prior beliefs and moment-to-moment experiences
             contribute to predictions and evaluations of memory performance.
           </p>
+
         </article>
 
       </div>
+
     </section>
 
     <section id="teaching">
+
       <h2>Teaching</h2>
 
       <p class="section-intro">
         My teaching interests include introductory psychology, cognitive
         psychology, research methods, and helping students connect
-        psychological theory with real-world examples.
+        psychological theories with real-world examples.
       </p>
+
     </section>
 
     <section id="news">
+
       <h2>News</h2>
 
       <ul class="news-list">
         <li>
-          <strong>July 2026</strong> — Launched my academic and research website.
+          <strong>July 2026</strong> —
+          Launched my academic and research website.
         </li>
       </ul>
+
     </section>
 
   </main>
 
   <footer>
     <div class="container">
-      © 2026 Hedieh Nejatmand · Built with GitHub Pages
+      © 2026 Hedieh Nejatmand Malari · Built with GitHub Pages
     </div>
   </footer>
 
 </body>
+
 </html>
