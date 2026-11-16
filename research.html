@@ -7,6 +7,50 @@
   <meta name="description" content="Research on working memory, cognitive load, and category learning by Hedieh Nejatmand Malari.">
   <link rel="canonical" href="https://hedieh-nejatmand.github.io/research.html">
   <link rel="stylesheet" href="site.css">
+  <style>
+    .research-page {
+      padding-top: 0;
+    }
+
+    .research-hero {
+      display: grid;
+      place-items: center;
+      min-height: clamp(250px, 24vw, 360px);
+      padding: 40px 0;
+      color: #FFF9EF;
+      text-align: center;
+      background-color: #251825;
+      background-image:
+        linear-gradient(rgba(37, 24, 37, 0.67), rgba(37, 24, 37, 0.67)),
+        url("research-banner.webp");
+      background-position: center 46%;
+      background-size: cover;
+    }
+
+    .research-hero h1 {
+      margin-bottom: 14px;
+      color: inherit;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 5vw, 3.75rem);
+      letter-spacing: -0.02em;
+    }
+
+    .research-hero p {
+      max-width: 68ch;
+      margin: 0 auto;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      line-height: 1.5;
+    }
+
+    .research-page #research {
+      padding-top: clamp(36px, 5vw, 64px);
+    }
+
+    .research-overview h2 {
+      margin-bottom: 22px;
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -30,10 +74,21 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section id="research">
+  <main class="research-page">
+    <div class="research-hero">
+      <div class="container">
+        <h1>Research Interests</h1>
+        <p>I study how working memory and cognitive load shape learning.</p>
+        <p>
+          I’m interested in what helps people learn more effectively and use what
+          they learn in new situations.
+        </p>
+      </div>
+    </div>
+
+    <section id="research" class="container">
       <div class="research-overview">
-        <h1>The Big Picture</h1>
+        <h2>The Big Picture</h2>
 
         <p>
           Think about the first time you use a new piece of software. You’re
